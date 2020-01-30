@@ -13,6 +13,7 @@ Via Composer
 
 ``` bash
 $ composer require hyungjune/reactauth
+$ php artisan preset reactAuth
 $ npm install
 ```
 
