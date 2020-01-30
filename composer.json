@@ -1,6 +1,6 @@
 {
     "name": "hyungjune/reactauth",
-    "description": ":package_description",
+    "description": "laravel + react api auth",
     "license": "MIT",
     "authors": [
         {
