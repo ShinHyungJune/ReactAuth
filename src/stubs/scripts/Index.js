@@ -24,8 +24,7 @@ function Index() {
 							<Route exact path="/register" component={Register}/>
 							<Route exact path="/sendResetPasswordMail" component={SendResetPasswordMail} />
 							<Route exact path="/passwordReset/:token" component={ResetPassword} />
-							<AuthRoute exact path="/events/:id" component={Replies} />
-                            <AuthRoute exact path="/" component={Events} />
+                            {/*<AuthRoute exact path="/" component={Example} />*/}
                         </Switch>
 					</div>
 				</Fragment>
