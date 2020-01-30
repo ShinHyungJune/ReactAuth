@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react';
-import Logo from '../../img/logo.png';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {login, setFlash} from '../actions/commonActions';
-
 import Form from '../components/common/Form';
 import axios from "axios";
 

@@ -1,13 +1,10 @@
 import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Provider} from 'react-redux';
 import AuthRoute from './components/common/AuthRoute';
 import store from './store';
 
-import Header from './scripts/components/Header';
-import Replies from './scripts/pages/Replies';
-import Events from './scripts/pages/Events';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import SendResetPasswordMail from './pages/SendResetPasswordMail';

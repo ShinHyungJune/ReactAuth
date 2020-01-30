@@ -1,8 +1,6 @@
-import React, {Component, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {connect} from 'react-redux';
 import {setFlash} from '../actions/commonActions';
-import Logo from '../../img/logo.png';
-import {Link} from 'react-router-dom';
 import Form from '../components/common/Form';
 
 const SendResetPasswordMail = ({user, setFlash, history}) => {
