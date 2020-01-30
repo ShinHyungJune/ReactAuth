@@ -62,8 +62,8 @@ class Preset extends LaravelPreset
 
     public static function updateRoutes()
     {
-        copy(__DIR__.'/stubs/api.php', base_path("/routes/api.php"));
-        copy(__DIR__.'/stubs/web.php', base_path("/routes/web.php"));
+        copy(__DIR__.'/stubs/routes/api.php', base_path("/routes/api.php"));
+        copy(__DIR__.'/stubs/routes/web.php', base_path("/routes/web.php"));
     }
 
     public static function updateMix()
