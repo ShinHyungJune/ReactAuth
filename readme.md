@@ -16,6 +16,32 @@ $ composer require hyungjune/reactauth
 ```
 
 ## Usage
+1. config/auth.php의 api driver를 passport로 수정
+
+``` bash
+'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+    ],
+```
+
+2. migrate
+``` bash
+$ php artisan migrate
+```
+
+3. passport key generate
+``` bash
+$ php artisan passport:install
+```
 
 ## Change log
 
