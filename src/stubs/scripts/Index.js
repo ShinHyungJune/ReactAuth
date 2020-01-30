@@ -17,9 +17,7 @@ function Index() {
 			<Router>
 				<Fragment>
                     <Flash />
-
-                    <Header />
-
+        
 					<div className="wrap-contents">
 						<Switch>
 							<Route exact path="/login" component={Login}/>
