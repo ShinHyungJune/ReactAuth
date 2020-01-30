@@ -43,6 +43,18 @@ $ php artisan migrate
 $ php artisan passport:install
 ```
 
+4. .env 파일에 email 세팅
+``` bash
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=your's
+MAIL_PASSWORD=your's
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your's
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
