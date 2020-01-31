@@ -12,6 +12,6 @@
         <div id="app">
 
         </div>
-        <script src="{{mix('/js/app.ts')}}"></script>
+        <script src="{{mix('/js/app.js')}}"></script>
     </body>
 </html>
