@@ -3,6 +3,7 @@
 namespace hyungjune\ReactAuth;
 
 use Illuminate\Foundation\Console\PresetCommand;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class ReactAuthServiceProvider extends ServiceProvider
@@ -23,6 +24,8 @@ class ReactAuthServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
         }
+
+        Schema::defaultStringLength(191);
 
         PresetCommand::macro("reactAuth", function($command){
             Preset::install();

@@ -57,7 +57,7 @@ class Preset extends LaravelPreset
 
     public static function updateMigrations()
     {
-        File::copyDirectory(__DIR__.'/stubs/migrations', base_path("/migrations"));
+        copy(__DIR__.'/stubs/migrations/2019_12_05_175444_create_verify_numbers_table.php', base_path("/database/migrations/2019_12_05_175444_create_verify_numbers_table.php"));
     }
 
     public static function updateRoutes()
