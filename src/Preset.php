@@ -16,6 +16,7 @@ class Preset extends LaravelPreset
         static::updateMails();
         static::updateMigrations();
         static::updateRoutes();
+        static::updateLangs();
         static::updateMix();
         static::updateScripts();
         static::updateSass();
