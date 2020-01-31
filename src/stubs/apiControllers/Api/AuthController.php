@@ -29,8 +29,6 @@ class AuthController extends ApiController
             'name' => 'required|string',
             /* "avatar" => "required|base64image|base64mimes:jpeg,png,jpg,gif,svg|base64max:2048", */
             'email' => 'required|string|email|unique:users',
-            'position' => 'required|string|max:255',
-            'department' => 'required|string|max:255',
             'password' => 'required|min:8|string|confirmed',
         ]);
 
@@ -43,8 +41,6 @@ class AuthController extends ApiController
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'position' => $request->position,
-                'department' => $request->department,
                 'password' => bcrypt($request->password),
             ]);
 

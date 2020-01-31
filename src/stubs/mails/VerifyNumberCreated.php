@@ -32,7 +32,7 @@ class VerifyNumberCreated extends Mailable implements ShouldQueue, Renderable
     public function build()
     {
         return $this->from("ssa4141@naver.com", config("app.name"))
-            ->subject(__("mail.verifyNumber")["created"])
+            ->subject("인증번호가 도착했습니다.")
             ->markdown('emails.verifyNumber.created');
     }
 }

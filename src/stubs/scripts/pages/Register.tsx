@@ -71,9 +71,7 @@ const Register = ({user, setFlash, history}) => {
 			<input type="password" name="password" placeholder="비밀번호"/>
 			<input type="password" name="password_confirmation" placeholder="비밀번호 확인"/>
 			<input type="text" name="name" placeholder="이름"/>
-			<input type="text" name="department" placeholder="부서"/>
-			<input type="text" name="position" placeholder="직급"/>
-			
+
 			<button className="btn-middle btn-full bg-primary">
 				{loading
 					? <p className="animated flash infinite">진행중</p>
