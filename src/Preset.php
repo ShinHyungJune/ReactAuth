@@ -24,14 +24,20 @@ class Preset extends LaravelPreset
     public static function updatePackageArray($packages)
     {
         return array_merge($packages, [
+            "@babel/plugin-proposal-class-properties" => "^7.7.4",
             "@babel/preset-react" => "^7.0.0",
+            "@babel/preset-typescript" => "^7.7.7",
+            "@types/react-redux" => "^7.1.5",
+            "@types/react-router-dom" => "^5.1.3",
+            "laravel-mix-react-typescript-extension" => "^1.0.0",
             "react"=> "^16.2.0",
             "react-dom" => "^16.2.0",
             "react-redux" => "^7.1.3",
             "react-router-dom" => "^5.1.2",
-            "redux" => "^4.0.4",
+            "redux" => "^4.0.5",
             "redux-devtools-extension" => "^2.13.8",
-            "redux-thunk" => "^2.3.0"
+            "redux-thunk" => "^2.3.0",
+            "typescript" => "^3.7.4"
         ]);
     }
 
@@ -64,6 +70,11 @@ class Preset extends LaravelPreset
     {
         copy(__DIR__.'/stubs/routes/api.php', base_path("/routes/api.php"));
         copy(__DIR__.'/stubs/routes/web.php', base_path("/routes/web.php"));
+    }
+
+    public static function updateLangs()
+    {
+        File::copyDirectory(__DIR__ . '/stubs/lang/ko', resource_path("/lang/ko"));
     }
 
     public static function updateMix()
