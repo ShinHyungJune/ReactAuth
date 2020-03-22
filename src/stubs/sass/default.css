@@ -34,7 +34,7 @@ input[placeholder] { color:#e1e1e1;}
 ::-moz-placeholder {/* Mozilla Firefox 19+*/ color:#e1e1e1;}
 :-ms-input-placeholder {/* ie10+*/ color:#e1e1e1;}
 
-input {color:#6C595F;}
+input {color:#6C595F !important;}
 
 select {cursor:pointer}
 table {width:100%;}

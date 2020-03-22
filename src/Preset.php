@@ -19,7 +19,7 @@ class Preset extends LaravelPreset
         static::updateLangs();
         static::updateMix();
         static::updateScripts();
-        static::updateSass();
+        static::updateCss();
     }
 
     public static function updatePackageArray($packages)
@@ -88,8 +88,8 @@ class Preset extends LaravelPreset
         File::copyDirectory(__DIR__ . '/stubs/scripts', resource_path("js"));
     }
 
-    public static function updateSass()
+    public static function updateCss()
     {
-        File::copyDirectory(__DIR__.'/stubs/sass', resource_path("sass"));
+        File::copyDirectory(__DIR__.'/stubs/css', base_path("/public/css"));
     }
 }
